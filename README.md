@@ -26,6 +26,8 @@ times and the portals will "wormhole" into the correct instance of the component
 
 You can also nest components with portals.
 
+See the component definition [here](https://github.com/knownasilya/ember-yielded-portals/blob/master/app/components/test-yields/template.hbs).
+
 ## Potential Drawbacks
 
 1. Currently the portal components that the user uses, leave remnant DOM nodes,
