@@ -1,0 +1,12 @@
+<div class="header">
+  {{portal-for name=(concat 'header-' elementId)}}
+</div>
+
+{{yield (hash
+  header=(component 'portal-content' for=(concat 'header-' elementId))
+  footer=(component 'portal-content' for=(concat 'footer-' elementId))
+)}}
+
+<div class="footer">
+  {{portal-for name=(concat 'footer-' elementId)}}
+</div>

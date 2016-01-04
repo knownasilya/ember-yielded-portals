@@ -1,3 +1,21 @@
-<h2 id="title">Welcome to Ember</h2>
+<h2 id="title">Yielded Portals</h2>
 
 {{outlet}}
+
+{{#test-yields as |portals|}}
+  {{#portals.header}}Header{{/portals.header}}
+
+  Body
+
+  {{#portals.footer}}Footer{{/portals.footer}}
+{{/test-yields}}
+
+<hr/>
+
+{{#test-yields as |portals|}}
+  {{#portals.header}}Header2{{/portals.header}}
+
+  Body2
+
+  {{#portals.footer}}Footer2{{/portals.footer}}
+{{/test-yields}}

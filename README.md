@@ -1,7 +1,29 @@
-# Yielded-portals
+# yielded-portals
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+An example of how to create advanced component APIs by combining
+[ember-portal] and [contextual components].
+
+## Example
+
+```hbs
+{{#test-yields as |portals|}}
+  {{#portals.header}}Header{{/portals.header}}
+
+  Body
+
+  {{#portals.footer}}Footer{{/portals.footer}}
+{{/test-yields}}
+```
+
+Run this app for the working version. Note that you can use the component multiple
+times and the portals will "wormhole" into the correct instance of the component.
+
+## Potential Drawbacks
+
+Currently the portal components that the user uses, leave remnant DOM nodes,
+which you might have to account for in your CSS. They will be wherever the user
+placed them in the component's block.
+
 
 ## Prerequisites
 
@@ -51,3 +73,6 @@ Specify what it takes to deploy your app.
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
 
+
+[ember-portal]: https://github.com/minutebase/ember-portal
+[contextual components]: https://github.com/emberjs/rfcs/blob/master/text/0064-contextual-component-lookup.md
