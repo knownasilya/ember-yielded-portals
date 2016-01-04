@@ -3,6 +3,8 @@
 An example of how to create advanced component APIs by combining
 [ember-portal] and [contextual components].
 
+:warning: This only works with Ember 2.3 (beta onward).
+
 ## Example
 
 ```hbs
