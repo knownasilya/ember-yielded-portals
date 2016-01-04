@@ -20,9 +20,12 @@ times and the portals will "wormhole" into the correct instance of the component
 
 ## Potential Drawbacks
 
-Currently the portal components that the user uses, leave remnant DOM nodes,
+1. Currently the portal components that the user uses, leave remnant DOM nodes,
 which you might have to account for in your CSS. They will be wherever the user
 placed them in the component's block.
+
+2. Using the same portal multiple times in the same block will only render
+the last portal of that type in the block.
 
 
 ## Prerequisites
