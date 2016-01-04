@@ -9,11 +9,15 @@ An example of how to create advanced component APIs by combining
 
 ```hbs
 {{#test-yields as |portals|}}
-  {{#portals.header}}Header{{/portals.header}}
+  {{#portals.header}}
+    Header
+  {{/portals.header}}
 
   Body
 
-  {{#portals.footer}}Footer{{/portals.footer}}
+  {{#portals.footer}}
+    Footer
+  {{/portals.footer}}
 {{/test-yields}}
 ```
 
