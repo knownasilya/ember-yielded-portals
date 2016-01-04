@@ -17,4 +17,12 @@
   Body2
 
   {{#portals.footer}}Footer2{{/portals.footer}}
+
+  {{#test-yields class="internal" as |portals|}}
+    {{#portals.header}}Header2 Internal{{/portals.header}}
+
+    Body2 Internal
+
+    {{#portals.footer}}Footer2 Internal{{/portals.footer}}
+  {{/test-yields}}
 {{/test-yields}}

@@ -1,0 +1,14 @@
+.test-yields {
+  border: 1px solid #666;
+  padding: 1em;
+}
+
+.test-yields.internal {
+  border: 1px solid red;
+}
+
+.header,
+.footer {
+  border: 1px solid green;
+  margin: 0.5em 0;
+}

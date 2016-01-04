@@ -20,6 +20,8 @@ An example of how to create advanced component APIs by combining
 Run this app for the working version. Note that you can use the component multiple
 times and the portals will "wormhole" into the correct instance of the component.
 
+You can also nest components with portals.
+
 ## Potential Drawbacks
 
 1. Currently the portal components that the user uses, leave remnant DOM nodes,
