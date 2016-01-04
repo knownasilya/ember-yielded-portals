@@ -3,11 +3,10 @@
 {{outlet}}
 
 {{#test-yields as |portals|}}
-  {{#portals.header}}Header{{/portals.header}}
-
   Body
 
-  {{#portals.footer}}Footer{{/portals.footer}}
+  {{#portals.header tagName=""}}Header{{/portals.header}}
+  {{#portals.footer tagName=""}}Footer{{/portals.footer}}
 {{/test-yields}}
 
 <hr/>
