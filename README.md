@@ -24,7 +24,8 @@ times and the portals will "wormhole" into the correct instance of the component
 
 1. Currently the portal components that the user uses, leave remnant DOM nodes,
 which you might have to account for in your CSS. They will be wherever the user
-placed them in the component's block.
+placed them in the component's block. Using `tagName=""` prevents nested divs, but
+still renders a div where the portal was used in the block.
 
 2. Using the same portal multiple times in the same block will only render
 the last portal of that type in the block.
