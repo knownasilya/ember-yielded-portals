@@ -27,6 +27,9 @@ placed them in the component's block.
 2. Using the same portal multiple times in the same block will only render
 the last portal of that type in the block.
 
+## Related discussions
+
+- [slots rfc]
 
 ## Prerequisites
 
@@ -79,3 +82,4 @@ Specify what it takes to deploy your app.
 
 [ember-portal]: https://github.com/minutebase/ember-portal
 [contextual components]: https://github.com/emberjs/rfcs/blob/master/text/0064-contextual-component-lookup.md
+[slots rfc]: https://github.com/emberjs/rfcs/pull/72
