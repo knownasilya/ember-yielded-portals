@@ -5,7 +5,8 @@
 {{#test-yields as |portals|}}
   Body
 
-  {{#portals.header tagName=""}}Header{{/portals.header}}
+  {{#portals.header tagName="" showingPortalItem=true}}Header{{/portals.header}}
+  {{#portals.header tagName="" showingPortalItem=true}}Header+{{/portals.header}}
   {{#portals.footer tagName=""}}Footer{{/portals.footer}}
 {{/test-yields}}
 

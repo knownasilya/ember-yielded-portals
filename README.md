@@ -36,7 +36,8 @@ placed them in the component's block. Using `tagName=""` prevents nested divs, b
 still renders a div where the portal was used in the block.
 
 2. Using the same portal multiple times in the same block will only render
-the last portal of that type in the block.
+the last portal of that type in the block. **Workaround**: Add `showingPortalItem=true` to
+the portal-content to append instead of replace.
 
 ## Related Discussions
 
