@@ -3,7 +3,7 @@
 An example of how to create advanced component APIs by combining
 [ember-portal] and [contextual components].
 
-:warning: This only works with Ember 2.3 (beta onward).
+![Ember Version][ember-version]
 
 ## Example
 
@@ -51,3 +51,4 @@ See the [ember-cli 1.13 readme template] for basic instructions.
 [contextual components]: https://github.com/emberjs/rfcs/blob/master/text/0064-contextual-component-lookup.md
 [slots rfc]: https://github.com/emberjs/rfcs/pull/72
 [ember-cli 1.13 Readme template]: https://github.com/ember-cli/ember-cli/blob/v1.13.13/blueprints/app/files/README.md
+[ember-version]: https://embadge.io/v1/badge.svg?start=2.3.0
